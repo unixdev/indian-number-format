@@ -8,6 +8,10 @@
         "check-compat": "uglifyjs index.js test/test.js -o /dev/null"
     },
     "author": "Mojahedul Hoque Abul Hasanat <just.unix@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/unixdev/indian-number-format.git"
+    },
     "license": "MIT",
     "devDependencies": {
         "mocha": "^5.1.1",
