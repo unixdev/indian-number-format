@@ -1,0 +1,16 @@
+{
+    "name": "indian-number-format",
+    "version": "1.0.0",
+    "description": "Format numbers with commas in the Indian numbering system",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "check-compat": "uglifyjs index.js test/test.js -o /dev/null"
+    },
+    "author": "Mojahedul Hoque Abul Hasanat <just.unix@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "mocha": "^5.1.1",
+        "uglify-js": "^3.3.24"
+    }
+}
