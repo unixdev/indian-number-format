@@ -1,5 +1,6 @@
 # indian-number-format
 [![Build Status](https://travis-ci.org/unixdev/indian-number-format.svg?branch=master)](https://travis-ci.org/unixdev/indian-number-format)
+[![Coverage Status](https://coveralls.io/repos/github/unixdev/indian-number-format/badge.svg?branch=master)](https://coveralls.io/github/unixdev/indian-number-format?branch=master)
 
 When formatting numbers with commas, the Indian sub-continent (Bangladesh, India, Nepal, Maldives, Pakistan,
 Sri Lanka) has a peculiar system. Instead of grouping numbers every 3 digits, it uses a repeating pattern of
