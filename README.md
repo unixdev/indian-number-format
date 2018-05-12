@@ -1,10 +1,15 @@
 # indian-number-format
 
-When formatting numbers with commas, the Indian sub-continent has a peculiar system. Instead of grouping numbers
-every 3 digits, it uses a repeating pattern of 3,2,2 digits. You can read about it on Wikipedia here:
+When formatting numbers with commas, the Indian sub-continent (Bangladesh, India, Nepal, Maldives, Pakistan,
+Sri Lanka) has a peculiar system. Instead of grouping numbers every 3 digits, it uses a repeating pattern of
+3,2,2 digits. The first comma is after the third digit, in the thousand's place. One hundred thousand is expressed
+as one lac (or one lakh). One hundred lacs is expressed as one crore. This pattern repeats itself. As an example,
+1 trillion is written as: 100,000,00,00,000. It is read as "one lac crore".
+
+You can read about it on Wikipedia here:
 [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system)
 
-This modules lets you format numbers in the Indian numbering system.
+This modules lets you format numbers according to the Indian numbering system.
 
 ## Install
 
@@ -41,11 +46,15 @@ console.log(fmt.format(123456789327.6452))      // prints: 12,345,67,89,327.6452
 // formatFixed
 console.log(fmt.formatFixed(1234567.2369, 2))   // prints: 1,23,4567.24
 console.log(fmt.formatFixed(1234, 2))           // prints: 1,234.00
+console.log(fmt.formatFixed(12.6))              // prints: 13
 
 // return non-numeric input unchanged
 console.log(fmt.format(null))                   // prints: null
-console.log(fmt.format(true))                   // prints: NaN
+console.log(fmt.format(true))                   // prints: true
 console.log(fmt.format(''))                     // prints the empty string
+
+// has the same idiosyncrasies of parseFloat
+console.log(fmt.format('10abcd'))               // prints: 10
 ```
 
 ## Development
