@@ -17,7 +17,7 @@ This modules lets you format numbers according to the Indian numbering system.
 Install the package in the usual way:
 
 ```
-npm install indian-number-format --save-dev 
+npm install --save indian-number-format
 ```
 
 ## Usage
