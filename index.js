@@ -65,29 +65,25 @@ function _formatAfterCleanup(originalNumber) {
     }
 
     var arr = String(originalMag).split('').reverse()
-    var start = arr.indexOf('.') + 1
-    var i
-    var result = []
+    var start = arr.indexOf('.') + 1                    // start of full part
+    var i                                               // source index
+    var result = []                                     // array holder of the result
 
-    // copy the fractional part
+    // copy the fractional part and the decimal if present
     for (i = 0; i < start; i++) {
         result.push(arr[i])
     }
 
-    if (arr[i] === '.') {
-        result.push('.')
-    }
-
     // main loop
-    var j = 0
+    var c = 0                                           // digit counter
     for (i = start; i < arr.length; i++) {
         result.push(arr[i])
-        j++
-        if ((j === 3 || j === 5 || j === 7) && (i < arr.length - 1)) {
+        c++
+        if ((c === 3 || c === 5 || c === 7) && (i < arr.length - 1)) {
             result.push(',')
         }
-        if (j === 7) {
-            j = 0
+        if (c === 7) {
+            c = 0
         }
     }
 

@@ -146,6 +146,11 @@ describe('#format', function () {
             var result = format(-1024.2567)
             assert.equal(result, '-1,024.2567')
         })
+
+        it('should be able to read a fractional number with only the decimal', function () {
+            var result = format('123.')
+            assert.equal(result, '123')
+        })
     })
 })
 
