@@ -1,6 +1,6 @@
 {
     "name": "indian-number-format",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Format numbers with commas in the Indian numbering system",
     "main": "index.js",
     "scripts": {
